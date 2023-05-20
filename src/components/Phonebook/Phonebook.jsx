@@ -37,7 +37,7 @@ export default function Phonebook(props) {
         isThere = true
         return alert(`${userData.name} is already in contacts`)
       }
-      return
+      return null
     })
     if(isThere === false) {
       props.addUser(userData)
